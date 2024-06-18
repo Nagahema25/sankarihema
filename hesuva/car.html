@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<title> Way To Heaven(car booking)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="C:\Users\sugab\OneDrive\Pictures\Screenshots\Screenshot 2024-06-02 163601.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+   
+<style>
+
+body{
+background-image:url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJpdmluZ3xlbnwwfHwwfHx8MA%3D%3D');
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+.contact-form{
+
+position: absolute;
+right: 50px;
+top:40px;
+width: 500px;
+height: 150px;  
+max-width:500px;
+margin:50px;
+border-radius:5px;
+text-align:center;
+padding:20px;
+
+}
+
+input[type=text], select{
+width:100%;
+padding:12px 20px;
+margin: 8px 0;
+display:inline-block;
+border:1px solid #ccc;
+border-radius:4px;
+box-sizing:border-box;
+cursor:pointer;
+
+}
+input[type=submit]{
+width:100%;
+background:#B22222;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:15px;
+}
+
+input[type=submit]:hover{
+background:#800000;
+}
+input[type=reset]{
+width:100%;
+background:#B22222;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:15px;
+}
+input[type=reset]:hover{
+background:#800000;
+}
+
+
+.column a{
+color:white;
+padding:200px;
+font-size:20px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height:550px;
+}
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height:550px;
+}
+
+
+.column a:hover{
+color:white;
+}
+
+.column2 i
+{
+font-size:30px;
+}
+
+.footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   font-size:30px;
+   background-color: #00008B;
+   color: white;
+padding:10px;
+   text-align: center;
+}
+
+
+
+</style>
+
+
+<body>
+<h1 style="text-align:center; font-family:Georgia; font-size:40px;">Unforgettable journey starts here</h1>
+<i class="fa fa-arrow-down"></i>
+<div class="contact-form">
+<form action="" onsubmit="myFunction()">
+<input type="text" id="name" placeholder="Enter Name" required>
+<br>
+
+<select id="from">
+<option value="origin">Origin</option>
+<option value="ariyalur"> Ariyalur</option>
+<option value="chengalpattu">chengalpattu</option>
+<option value="chennai"> Chennai</option>
+<option value="coimabatore"> Coimbatore</option>
+<option value="Cuddalore"> Cuddalore</option>
+<option value="dindigul"> Dindigul</option>
+<option value="erode"> Erode</option>
+<option value="Kancheepuram">Kancheepuram </option>
+<option value="kanyakumari"> Kanyakumari</option>
+<option value="madurai"> Madurai</option>
+<option value="namakkal"> Namakkal</option>
+<option value="Nagapattinam">Nagapattinam</option>
+<option value="salem"> Salem</option>
+<option value="sivakasi"> Sivakasi</option>
+<option value="tenkasi"> Tenkasi</option>
+<option value="theni"> Theni</option>
+<option value="tirunelveli"> Tirunelveli</option>
+<option value="trichy"> Trichy</option>
+<option value="Valparai">Valparai</option>
+<option value="Virudhunagar">Virudhunagar</option>
+</select>
+
+
+<select id="from">
+<option value="Destination">Destination</option>
+<option value="ariyalur"> Ariyalur</option>
+<option value="chengalpattu">chengalpattu</option>
+<option value="chennai"> Chennai</option>
+<option value="coimabatore"> Coimbatore</option>
+<option value="Cuddalore">Cuddalore</option>
+<option value="dindigul"> Dindigul</option>
+<option value="erode"> Erode</option>
+<option value="kanyakumari"> Kanyakumari</option>
+<option value="Kancheepuram">Kancheepuram </option>
+<option value="madurai"> Madurai</option>
+<option value="namakkal"> Namakkal</option>
+<option value="Nagapattinam"> Nagapattinam</option>
+<option value="salem"> Salem</option>
+<option value="sivakasi"> Sivakasi</option>
+<option value="tenkasi"> Tenkasi</option>
+<option value="theni"> Theni</option>
+<option value="tirunelveli"> Tirunelveli</option>
+<option value="trichy"> Trichy</option>
+<option value="Valparai">Valparai</option>
+<option value="Virudhunagar">Virudhunagar</option>
+
+</select><br><br>
+
+
+ 	
+<input type="number" id="passenger" placeholder="number of passengers" required><br>
+<br>
+
+
+
+
+<input type="number" id="age" placeholder="Enter age" required><br>
+<br>
+
+
+<input type="text" id="mail" placeholder=" Enter your mail Id" required><br>
+<br>
+
+
+  <input type="radio"  name="radio">
+<label class="container" style="color:white;font-size:18px">One way
+  <span class="checkmark"></span>
+</label>
+  <input type="radio" name="radio">
+<label class="container"  style="color:white; font-size:18px">Round Trip
+  <span class="checkmark"></span>
+</label><br><br>
+
+
+<Label for="date " style="color:white; font-size:18px">Pick-up date</label>
+<input type="date" id="date" required>
+<Label for="time "   style="color:white; font-size:18px">Time:</label>
+<input type="time" id="time" required>
+<br>
+<br>
+<Label for="date "   style="color:white; font-size:18px">Drop-off date</label>
+<input type="date" id="date" required>
+<Label for="time "   style="color:white; font-size:18px">Time:</label>
+<input type="time" id="time" required>
+<br>
+<br>
+
+<input type="Reset"value="Reset">
+<input type="Submit"value="Submit">
+</form><br>
+<script>
+function myFunction() {
+  alert("The form was submitted Successfully!");
+}
+</script>
+</div>
+
+<div class="row" id="row">
+<br><br><br><BR><BR><BR><BR><BR><br><br><br><br><br><br><br><br><br><BR><BR><BR><BR><BR><br><br><br><br><br><br>
+<br><br><br><BR><BR><BR><BR><BR><br><br><br>
+
+<div class="column" style="background-color:#00008B; ">
+<br><br>
+<a  href="" > Terms&conditions</a><br><br><br>
+<a  href="" > privacy settings</a><br><br><br>
+<a href="" > customer services</a><br><br><br>
+<a href="" > your account</a><br><br><br>
+<a href="" >login</a><br><br><br>
+<a href="" > sign up</a><br><br><br>
+</div>
+
+<div class="column1" style="background-color:#00008B; color:white; font-size:20px;">
+<h3 style="text-align:center;" >Contact us </h3><br>
+<a style="font-size:20px; text-align:left;color:white;" href="#"><i class="fa fa-fw fa-envelope"> </i>waytoheaven@gmail.com</a> <br><br><br>
+mobile<i class="fa fa-fw fa-phone"> </i>: 9876543210 <br><br>
+ <p><i class="fa fa-info-circle" aria-hidden="true"></i>
+ For more information contact customer services<p> <br>
+<div class="column2">
+<i class="fa fa-facebook-official"></i> 
+<i class="fa fa-fw fa-twitter"> </i>
+<i class="fa fa-fw fa-instagram"> </i>
+<i class="fa fa-fw fa-telegram"> </i></div>
+</div>
+</div>
+
+<div class="footer">
+<P> CopyRights @ Designed by HESUVA  <p>
+</div>
+
+</body>
+</html>

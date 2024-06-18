@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<title>Feedback Form</title>
+<link rel="icon" type="image/png" href="C:\Users\sugab\OneDrive\Pictures\Screenshots\Screenshot 2024-06-02 163601.png">
+
+</head>
+
+<style>
+.header
+{
+color:white;
+text-align:center;
+font-size:30px;
+} 
+
+.form{
+
+position: absolute;
+right: 464px;
+top:80px;
+width: 400px;
+height:400px;  
+max-width:400px;
+margin:50px;
+width:100%;
+border-radius:5px;
+text-align:center;
+padding:50px;
+
+}
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit]{
+width:100%;
+background:#B22222;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:15px;
+}
+
+input[type=submit]:hover{
+background:#800000;
+}
+input[type=reset]{
+width:100%;
+background:#B22222;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:15px;
+}
+input[type=reset]:hover{
+background:#800000;
+}
+
+</style>
+
+<body style="background-image:url('https://i.pinimg.com/originals/d8/81/30/d881309aca50b3f505910958883e6097.gif'); background-size:cover;">
+
+<div class="header">
+<h1>Feedback Form</h1>
+</div>
+
+<div class="form">
+<form action="" onsubmit="myFunction()" >
+
+<input type="text" id="name" placeholder="Enter Name" required><br>
+<br>
+
+<input type="number" id="age" placeholder="Enter age" required><br>
+<br>
+
+<input type="email" id="mail" placeholder="Enter Email Id" required><br>
+<br>
+
+<Label for="subject" style="font-size:30px; color:white;"> Feedback Here</label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea><br><br>
+
+
+
+<input type="Reset"value="Reset">
+<input type="Submit"value="Submit">
+</form><br>
+
+
+</div>
+<script>
+function myFunction() {
+  alert("Thank You! For your wonderful feedback");
+}
+</script>
+
+</body>
+</html>
